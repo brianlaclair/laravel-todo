@@ -7,38 +7,29 @@ Features
 - Task Completion Toggle: Mark tasks as completed or uncompleted with a single action.
 
 ## Installation
-#### Clone the repository:
 
+Grab the repository
 ```bash
 git clone https://github.com/brianlaclair/laravel-todo.git
 cd laravel-todo
 ```
 
-#### Install dependencies:
-
-```bash
+Install dependencies
+```
 composer install
 npm install && npm run dev
 ```
 
-#### Set up the environment:
-
-Copy .env.example to .env
-```bash
-cp .env.example .env
+Set up your environment
 ```
-Configure your database settings in the .env file.
-
-#### Run migrations:
-
-```bash
+cp .env.example .env
+php artisan key:generate
 php artisan migrate
 ```
 
-Start the application:
-
-```bash
-php artisan serve
+Start your server!
+```
+composer run dev
 ```
 
 Open the app in your browser at http://127.0.0.1:8000.
